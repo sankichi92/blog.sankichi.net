@@ -11,6 +11,6 @@ github_username: sankichi92
 # Build settings
 timezone: Asia/Tokyo
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed

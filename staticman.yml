@@ -1,7 +1,3 @@
-# Name of the property. You can have multiple properties with completely
-# different config blocks for different sections of your site.
-# For example, you can have one property to handle comment submission and
-# another one to handle posts.
 comments:
   # (*) REQUIRED
   #
@@ -16,12 +12,12 @@ comments:
   branch: "master"
 
   # Text to use as the commit message or pull request title. Accepts placeholders.
-  commitMessage: "Add Staticman data"
+  commitMessage: "New comment"
 
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "entry{@timestamp}"
+  filename: "comment-{@timestamp}"
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
@@ -35,7 +31,7 @@ comments:
     date:
       type: date
       options:
-        format: "timestamp-seconds"
+        format: "iso8601"
 
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
@@ -43,7 +39,7 @@ comments:
   moderation: true
 
   # Name of the site. Used in notification emails.
-  name: "eduardoboucas.com"
+  name: "blog.sankichi.net"
 
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
@@ -75,3 +71,12 @@ comments:
   # the name of the field and values are possible transformation types.
   transforms:
     email: md5
+
+  # reCaptcha
+  # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
+  reCaptcha:
+    enabled: true
+    siteKey: "6LengD0UAAAAAKbuSUeMn5cxZnN7jC-2d4wt_U4k"
+    # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
+    # For more information, https://staticman.net/docs/encryption
+    secret: "Przs4Og0iDV6yFT7JfE/T+T9MXUCgvvn07p3iKKCX62E5TXA/a0wZKrHxGw57Onptw6MVKr/Z+WbjlzeH1p92FP5pedD/PelyuQ+0vRlyXIpM7ToeGbz/+EQQpdgC9PpUynZkJQLP7x8PsorywJyOKTyIJYM33XEZ0WbSmspXoY="

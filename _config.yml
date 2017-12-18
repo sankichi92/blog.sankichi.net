@@ -11,38 +11,26 @@ url                      : "https://blog.sankichi.net"
 repository               : "sankichi92/blog.sankichi.net"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+  provider               : "staticman_v2"
 staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "master"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yaml"
+  moderation             : true
+  path                   : "/_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
   transforms:
-    email                : # "md5"
+    email                : "md5"
   generatedFields:
     date:
-      type               : # "date"
+      type               : "date"
       options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : "iso8601"
 reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+  siteKey                : "6LengD0UAAAAAKbuSUeMn5cxZnN7jC-2d4wt_U4k"
+  secret                 : "Przs4Og0iDV6yFT7JfE/T+T9MXUCgvvn07p3iKKCX62E5TXA/a0wZKrHxGw57Onptw6MVKr/Z+WbjlzeH1p92FP5pedD/PelyuQ+0vRlyXIpM7ToeGbz/+EQQpdgC9PpUynZkJQLP7x8PsorywJyOKTyIJYM33XEZ0WbSmspXoY="
 
 # SEO Related
 google_site_verification :
@@ -191,8 +179,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
-      comments: # true
+      comments: true
       share: true
       related: true
   # _pages

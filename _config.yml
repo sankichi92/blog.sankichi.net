@@ -33,10 +33,8 @@ reCaptcha:
   secret                 : "Przs4Og0iDV6yFT7JfE/T+T9MXUCgvvn07p3iKKCX62E5TXA/a0wZKrHxGw57Onptw6MVKr/Z+WbjlzeH1p92FP5pedD/PelyuQ+0vRlyXIpM7ToeGbz/+EQQpdgC9PpUynZkJQLP7x8PsorywJyOKTyIJYM33XEZ0WbSmspXoY="
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
+google_site_verification : "onsL5Kti5LzGn4nhBkUXu_TqeGhkY_zLr4znqXbs3pA"
+bing_site_verification   : "5D6E495D05B969C5D8C46B1D5560FE12"
 
 # Social Sharing
 twitter:

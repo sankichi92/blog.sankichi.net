@@ -38,18 +38,19 @@ bing_site_verification   : "5D6E495D05B969C5D8C46B1D5560FE12"
 
 # Social Sharing
 twitter:
-  username               : sankichi92
+  username               : "sankichi92"
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+  username               : "tmiyoshi0902"
+og_image                 : "/assets/icons/android-chrome-384x384.png"
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "sankichi92"
+  links:
+    - "https://twitter.com/sankichi92"
+    - "https://facebook.com/tmiyoshi0902"
+    - "https://instagram.com/sankichi92"
+    - "https://www.linkedin.com/in/tmiyoshi0902"
+    - "https://plus.google.com/+TakahiroMiyoshi"
 
 # Analytics
 analytics:

@@ -2,6 +2,7 @@
 title: WordPress から Jekyll へ移行した
 categories:
   - Dev
+date: '2017-12-22 22:30:00 +0900'
 toc: true
 ---
 

@@ -1,0 +1,72 @@
+- category: DAW
+  tools:
+    - maker: Apple
+      name:  Logic Pro X
+
+- category:  オーディオインターフェース
+  tools:
+    - maker: Focusrite
+      name:  Scarlett 2i4
+      asin:  B009USR2Y0
+
+- category: モニタースピーカー
+  tools:
+    - maker: Yamaha
+      name:  MSP3
+      asin:  B003J7WU22
+
+- category: モニターヘッドホン
+  tools:
+    - maker: Sony
+      name:  MDR-CD900ST
+      asin:  B000UPEJCU
+
+- category: マイク
+  tools:
+    - maker: Audio-Technica
+      name:  AT2035
+      asin:  B001JERO46
+    - maker: Behringer
+      name:  C-2
+      asin:  B000CZ0RLU
+    - maker: Shure
+      name:  SM58
+      asin:  B000CZ0R42
+
+- category: ギター
+  tools:
+    - maker: Roland
+      name:  GC-1
+    - maker: Godin
+      name:  ACS Slim SA
+    - maker: S.Yairi
+      name:  YD-75
+
+- category: ベース
+  tools:
+    - maker: Fender Japan
+      name:  JB-STD
+
+- category: キーボード
+  tools:
+    - maker: KORG
+      name:  microKEY-25
+      asin:  B007VQIBB6
+
+- category: プリアンプ・DI
+  tools:
+    - maker: ART
+      name:  Tube MP Studio V3
+      asin:  B002C5BV36
+    - maker: TECH21
+      name:  SansAmp VT Bass DI
+      asin:  B00EFAM9G4
+
+- category: その他
+  tools:
+    - maker: Crypton Future Media
+      name:  初音ミクV3 バンドル
+      asin:  B00EEWFAI2
+    - maker: Roland
+      name:  GR-55
+      asin:  B008E2R2K2

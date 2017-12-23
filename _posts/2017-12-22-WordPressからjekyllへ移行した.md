@@ -2,6 +2,7 @@
 title: WordPress から Jekyll へ移行した
 categories:
   - Dev
+excerpt: "ブログシステムを WordPress から Jekyll へ移行した。その理由と手順，やってみた感想について。"
 date: '2017-12-22 22:30:00 +0900'
 toc: true
 ---
@@ -79,7 +80,7 @@ Jekyll に新しさはないけれど，長期運用が前提だったので無�
 そこで，以下の二つの記事を参考に，CloudFlare を用いて HTTPS 化した。
 （CloudFlare が何をしているかはまだよくわかっていない。）
 
-- [CloudflareでブログをHTTPS化 | To Be Decided](https://www.kaitoy.xyz/2016/07/01/https-support-by-cloudflare/)
+- [CloudflareでブログをHTTPS化 \| To Be Decided](https://www.kaitoy.xyz/2016/07/01/https-support-by-cloudflare/)
 - [GitHub Pages + CloudFlare で独自ドメインをSSL化する - Qiita](https://qiita.com/noraworld/items/89dd85a434a7b759e00c)
 
 ### Minimal Mistakes テーマの適用

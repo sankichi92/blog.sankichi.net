@@ -10,27 +10,6 @@ description              : "SFと音楽が好きなWebエンジニアさんき�
 url                      : "https://blog.sankichi.net"
 repository               : "sankichi92/blog.sankichi.net"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-comments:
-  provider               : "staticman_v2"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yaml"
-  moderation             : true
-  path                   : "/_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601"
-reCaptcha:
-  siteKey                : "6LengD0UAAAAAKbuSUeMn5cxZnN7jC-2d4wt_U4k"
-  secret                 : "Przs4Og0iDV6yFT7JfE/T+T9MXUCgvvn07p3iKKCX62E5TXA/a0wZKrHxGw57Onptw6MVKr/Z+WbjlzeH1p92FP5pedD/PelyuQ+0vRlyXIpM7ToeGbz/+EQQpdgC9PpUynZkJQLP7x8PsorywJyOKTyIJYM33XEZ0WbSmspXoY="
 
 # SEO Related
 google_site_verification : "onsL5Kti5LzGn4nhBkUXu_TqeGhkY_zLr4znqXbs3pA"

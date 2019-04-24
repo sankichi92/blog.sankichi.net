@@ -4,20 +4,10 @@ title: "SF"
 toc: true
 ---
 
-## 書いた記事
-
-<ul>
-  {% for post in site.categories.SF %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## 読んだ本
-
 {% assign books_by_year = site.data.sf.books | group_by_exp: "book", "book.date | date: '%Y'" %}
 {% for year in books_by_year %}
 
-### {{ year.name }}
+## {{ year.name }}
 
 <ul>
   {% for book in year.items %}

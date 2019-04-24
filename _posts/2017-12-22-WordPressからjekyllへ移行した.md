@@ -1,9 +1,9 @@
 ---
 title: WordPress から Jekyll へ移行した
+date: 2017-12-22 22:30:00 +0900
 categories:
-  - Dev
-excerpt: "ブログシステムを WordPress から Jekyll へ移行した。その理由と手順，やってみた感想について。"
-date: '2017-12-22 22:30:00 +0900'
+- Dev
+excerpt: ブログシステムを WordPress から Jekyll へ移行した。その理由と手順，やってみた感想について。
 toc: true
 ---
 

@@ -6,8 +6,8 @@
 - category:  オーディオインターフェース
   tools:
     - maker: Focusrite
-      name:  Scarlett 2i4
-      asin:  B009USR2Y0
+      name:  Clarett 2Pre USB
+      asin:  B0794PMMNB
 
 - category: モニタースピーカー
   tools:
@@ -44,14 +44,20 @@
 
 - category: ベース
   tools:
-    - maker: Fender Japan
-      name:  JB-STD
+    - maker: Sadowsky
+      name:  Metroline RV4
 
-- category: キーボード
+- category: ギタープロセッサー
   tools:
-    - maker: KORG
-      name:  microKEY-25
-      asin:  B007VQIBB6
+    - maker: BOSS
+      name:  GP-10
+      asin:  B00KRYQSRS
+
+- category: ベースエフェクター
+  tools:
+    - maker: EBS
+      name:  MultiComp Studio Edition
+      asin:  B011LOVBYC
 
 - category: プリアンプ・DI
   tools:
@@ -62,11 +68,14 @@
       name:  SansAmp VT Bass DI
       asin:  B00EFAM9G4
 
-- category: その他
+- category: キーボード
+  tools:
+    - maker: KORG
+      name:  microKEY-25
+      asin:  B007VQIBB6
+
+- category: ソフトウェア音源
   tools:
     - maker: Crypton Future Media
       name:  初音ミクV3 バンドル
       asin:  B00EEWFAI2
-    - maker: Roland
-      name:  GR-55
-      asin:  B008E2R2K2

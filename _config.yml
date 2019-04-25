@@ -54,11 +54,17 @@ author:
     - label: GitHub
       icon: fab fa-fw fa-github
       url: https://github.com/sankichi92
+    - label: SoundCloud
+      icon: fab fa-fw fa-soundcloud
+      url: https://soundcloud.com/sankichi92
 
 
 # Site Footer
 footer:
   links:
+    - label: Profile
+      icon: fas fa-fw fa-globe
+      url: https://sankichi.net
     - label: Twitter
       icon: fab fa-fw fa-twitter-square
       url: https://twitter.com/sankichi92
@@ -68,6 +74,9 @@ footer:
     - label: GitHub
       icon: fab fa-fw fa-github
       url: https://github.com/sankichi92
+    - label: SoundCloud
+      icon: fab fa-fw fa-soundcloud
+      url: https://soundcloud.com/sankichi92
 
 
 # Reading Files

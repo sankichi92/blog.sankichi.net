@@ -24,21 +24,3 @@ toc: true
     {% endfor %}
   {% endfor %}
 </dl>
-
-## 聞いた音楽
-
-{% assign lives_by_year = site.data.music.lives | group_by_exp: "live", "live.date | date: '%Y'" %}
-{% for year in lives_by_year %}
-
-### {{ year.name }}
-
-<ul>
-  {% for live in year.items %}
-    <li>
-      <a href="{{ live.url }}" target="_blank">{{ live.name }}</a>
-      <small>{{ live.date | date: '%-m/%-d'}}@{{ live.place }}</small>
-    </li>
-  {% endfor %}
-</ul>
-
-{% endfor %}

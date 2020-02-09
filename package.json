@@ -1,0 +1,11 @@
+{
+  "name": "blog.sankichi.net",
+  "private": true,
+  "scripts": {
+    "textlint": "textlint"
+  },
+  "devDependencies": {
+    "textlint": "^11.6.3",
+    "textlint-rule-preset-japanese": "^4.0.4"
+  }
+}

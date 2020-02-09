@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article>
+  <header class="text-center mb-3">
+    <p class="text-muted mb-2">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</time>
+    </p>
+    <h1>{{ page.title }}</h1>
+    <ul class="list-inline">
+      {%- for category in page.categories -%}
+      <li class="list-inline-item">
+        <span class="badge badge-secondary">{{ category }}</span>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </header>
+  <div class="markdown-body">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{%- assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+{%- for year in posts_by_year -%}
+<section>
+  <header class="text-center my-5">
+    <h1 class="h3">{{ year.name }}</h1>
+  </header>
+  {%- for post in year.items -%}
+  <article class="card mb-3">
+    <div class="card-body">
+      <span class="card-subtitle text-muted">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+      </span>
+      <h2 class="card-title h4">
+        <a href="{{ post.url | relative_url }}" class="text-dark stretched-link">
+          {{ post.title }}
+        </a>
+      </h2>
+      <ul class="list-inline">
+        {%- for category in post.categories -%}
+        <li class="list-inline-item">
+          <span class="badge badge-secondary">{{ category }}</span>
+        </li>
+        {%- endfor -%}
+      </ul>
+      <div class="card-text lead mb-2">
+        {{ post.excerpt }}
+      </div>
+    </div>
+  </article>
+  {%- endfor -%}
+</section>
+{%- endfor -%}

@@ -1,144 +1,34 @@
-# See https://github.com/mmistakes/minimal-mistakes/blob/4.16.0/_config.yml
-remote_theme: mmistakes/minimal-mistakes@4.16.0
-
-
-# Site Settings
-locale: ja-JP
+# Site settings
 title: blog.sankichi.net
-name: Takahiro Miyoshi
-description: 音楽とSF小説が好きなWebエンジニアのブログ
-repository: sankichi92/blog.sankichi.net
-teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+author:
+  name: Takahiro Miyoshi
+  url: https://sankichi.net/
+  twitter: sankichi92
+description: 音楽とSF小説が好きなソフトウェアエンジニアのブログ
+lang: ja-JP
+favicon: https://www.gravatar.com/avatar/bce862d9ab172a7b03e836640014f6e6?s=64
+google_analytics: UA-29326026-1
+date_format: "%Y年%-m月%-d日"
 
+# Build settings
+theme: null
+markdown: CommonMarkGhPages
+commonmark: # Remove `tagfilter` extension from https://github.com/github/pages-gem/blob/919909ac50c197a248ecd293b71feeabcb8ef58d/lib/github-pages/configuration.rb#L153-L156
+  extensions: ['table', 'strikethrough', 'autolink']
+  options: ['FOOTNOTES']
+permalink: /:categories/:title/
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
 
-# Social Sharing
+# jekyll-seo-tag
 twitter:
   username: sankichi92
-facebook:
-  username: sankichi92
-og_image: # Open Graph/Twitter default site image
+  card: summary
 social:
   name: Takahiro Miyoshi
   links:
     - https://twitter.com/sankichi92
     - https://github.com/sankichi92
-    - https://facebook.com/tmiyoshi0902
-    - https://www.linkedin.com/in/tmiyoshi0902
-
-
-# Analytics
-analytics:
-  provider: google
-  google:
-    tracking_id: UA-29326026-1
-
-
-# Site Author
-author:
-  name: Takahiro Miyoshi
-  avatar: https://www.gravatar.com/avatar/bce862d9ab172a7b03e836640014f6e6?s=330
-  bio: 音楽とSF小説が好きなWebエンジニア
-  location: Tokyo
-  email: takahiro-miyoshi@sankichi.net
-  links:
-    - label: Profile
-      icon: fas fa-fw fa-globe
-      url: https://sankichi.net
-    - label: Twitter
-      icon: fab fa-fw fa-twitter-square
-      url: https://twitter.com/sankichi92
-    - label: Facebook
-      icon: fab fa-fw fa-facebook-square
-      url: https://www.facebook.com/sankichi92
-    - label: GitHub
-      icon: fab fa-fw fa-github
-      url: https://github.com/sankichi92
-    - label: SoundCloud
-      icon: fab fa-fw fa-soundcloud
-      url: https://soundcloud.com/sankichi92
-
-
-# Site Footer
-footer:
-  links:
-    - label: Profile
-      icon: fas fa-fw fa-globe
-      url: https://sankichi.net
-    - label: Twitter
-      icon: fab fa-fw fa-twitter-square
-      url: https://twitter.com/sankichi92
-    - label: Facebook
-      icon: fab fa-fw fa-facebook-square
-      url: https://www.facebook.com/sankichi92
-    - label: GitHub
-      icon: fab fa-fw fa-github
-      url: https://github.com/sankichi92
-    - label: SoundCloud
-      icon: fab fa-fw fa-soundcloud
-      url: https://soundcloud.com/sankichi92
-
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - README.md
-  - CNAME
-
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page/:num/
-timezone: Asia/Tokyo
-
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-github-metadata
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-remote-theme
-  - jekyll-sitemap
-
-
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      related: false
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+    - https://www.facebook.com/sankichi9
+    - https://www.linkedin.com/in/sankichi92/

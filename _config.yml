@@ -18,6 +18,7 @@ commonmark: # Remove `tagfilter` extension from https://github.com/github/pages-
   options: ['FOOTNOTES']
 permalink: /:categories/:title/
 plugins:
+  - jekyll-feed
   - jekyll-github-metadata
   - jekyll-seo-tag
 

@@ -244,9 +244,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-commonmark-ghpages
+  jekyll-feed
   jekyll-github-metadata
-  jekyll-paginate
-  jekyll-remote-theme
   jekyll-seo-tag
 
 BUNDLED WITH

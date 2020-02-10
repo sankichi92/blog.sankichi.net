@@ -243,11 +243,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-commonmark-ghpages
-  jekyll-feed
-  jekyll-github-metadata
-  jekyll-seo-tag
-  jekyll-sitemap
 
 BUNDLED WITH
    2.1.2

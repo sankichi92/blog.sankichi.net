@@ -1,10 +1,8 @@
 # Site settings
-title: blog.sankichi.net
 author:
   name: Takahiro Miyoshi
   url: https://sankichi.net/
   twitter: sankichi92
-description: 音楽とSF小説が好きなソフトウェアエンジニアのブログ
 lang: ja-JP
 google_analytics: UA-29326026-1
 date_format: "%Y年%-m月%-d日"
@@ -18,7 +16,6 @@ commonmark: # Remove `tagfilter` extension from https://github.com/github/pages-
 permalink: /:categories/:title/
 plugins:
   - jekyll-feed
-  - jekyll-github-metadata
   - jekyll-seo-tag
   - jekyll-sitemap
 

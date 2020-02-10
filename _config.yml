@@ -21,6 +21,7 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # jekyll-seo-tag
 twitter:

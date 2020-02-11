@@ -16,6 +16,7 @@ commonmark: # Remove `tagfilter` extension from https://github.com/github/pages-
 permalink: /:categories/:title/
 plugins:
   - jekyll-feed
+  - jekyll-octicons
   - jekyll-seo-tag
   - jekyll-sitemap
 

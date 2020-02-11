@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css" integrity="sha256-HbgiGHMLxHZ3kkAiixyvnaaZFNjNWLYKD/QG6PWaQPc=" crossorigin="anonymous"/>
 <style>
   .markdown-body {
-    max-width: 768px;
+    max-width: 767px;
     margin: 0 auto;
     font-size: 1.25rem;
   }
@@ -25,18 +25,27 @@
 </script>
 </head>
 <body>
-<nav class="navbar navbar-light bg-light mb-3">
+<nav class="navbar navbar-expand navbar-light bg-light mb-3">
   <div class="container">
     <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  </div>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.author.url }}">{% octicon person %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.github.repository_url }}">{% octicon mark-github %}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 <main class="container">
-  {{ content }}
+{{ content }}
 </main>
 <footer class="my-3">
   <div class="container text-center">
-    {%- assign reversed_posts = site.posts | reverse -%}
+    {% assign reversed_posts = site.posts | reverse -%}
     <small>&copy; {{ reversed_posts[0].date | date: '%Y' }}-{{ site.time | date: '%Y' }} <a href="{{ site.author.url }}" class="text-dark">{{ site.author.name }}</a></small>
   </div>
 </footer>

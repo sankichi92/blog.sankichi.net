@@ -45,8 +45,7 @@
 </main>
 <footer class="my-3">
   <div class="container text-center">
-    {% assign reversed_posts = site.posts | reverse -%}
-    <small>&copy; {{ reversed_posts[0].date | date: '%Y' }}-{{ site.time | date: '%Y' }} <a href="{{ site.author.url }}" class="text-dark">{{ site.author.name }}</a></small>
+    <small>&copy; {{ site.posts.last.date | date: '%Y' }}–{{ site.posts.first.date | date: '%Y' }} <a href="{{ site.author.url }}" class="text-dark">{{ site.author.name }}</a></small>
   </div>
 </footer>
 </body>

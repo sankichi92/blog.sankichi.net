@@ -17,8 +17,13 @@ permalink: /:categories/:title/
 plugins:
   - jekyll-feed
   - jekyll-octicons
+  - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# jekyll-relative-links
+relative_links:
+  collections: true
 
 # jekyll-seo-tag
 twitter:

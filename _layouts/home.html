@@ -14,20 +14,19 @@ layout: default
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
       </span>
       <h2 class="card-title h4">
-        <a href="{{ post.url | relative_url }}" class="text-dark stretched-link">
-          {{ post.title }}
-        </a>
+        {{ post.title }}
       </h2>
       <ul class="list-inline">
         {%- for category in post.categories -%}
         <li class="list-inline-item">
-          <span class="badge badge-secondary">{{ category }}</span>
+          <span class="badge bg-secondary">{{ category }}</span>
         </li>
         {%- endfor -%}
       </ul>
       <div class="card-text lead mb-2">
         {{ post.excerpt }}
       </div>
+      <a href="{{ post.url | relative_url }}" class="btn btn-outline-primary stretched-link">続きを読む</a>
     </div>
   </article>
   {%- endfor -%}

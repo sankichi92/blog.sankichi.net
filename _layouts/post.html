@@ -2,7 +2,7 @@
 layout: default
 ---
 <article>
-  <header class="text-center mb-3">
+  <header class="text-center">
     <p class="text-muted mb-2">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</time>
     </p>
@@ -10,7 +10,7 @@ layout: default
     <ul class="list-inline">
       {%- for category in page.categories -%}
       <li class="list-inline-item">
-        <span class="badge badge-secondary">{{ category }}</span>
+        <span class="badge bg-secondary">{{ category }}</span>
       </li>
       {%- endfor -%}
     </ul>

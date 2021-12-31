@@ -61,7 +61,7 @@ Web UI から検索してダウンロードできるファイルもまだまだ�
 また、こうした API 等での提供に最適化された [COG (Cloud Optimized GeoTIFF)](https://www.cogeo.org) というファイルフォーマットも一般的になってきているようだ。
 
 オープンソースの API 実装として、たとえば [NASA の COVID-19 Dashboard](https://earthdata.nasa.gov/covid19/) のサーバサイド実装 [NASA-IMPACT/covid-api](https://github.com/NASA-IMPACT/covid-api) がある。
-ざっくり見たところ、AWS のサーバレスアーキテクチャを採用していて、COG の特徴を活かしたいまどきな構成なっている。
+ざっくり見たところ、AWS のサーバレスアーキテクチャを採用していて、COG の特徴を活かしたいまどきな構成になっている。
 
 ### カタログ連携
 

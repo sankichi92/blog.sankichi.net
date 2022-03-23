@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>shikuchoson-boundaries</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin
+    />
+  </head>
+  <body>
+    <div id="map" style="height:100vh"></div>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin
+    ></script>
+    <script type="module">
+      const map = L.map("map");
+      L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png", {
+        attribution:
+          "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
+      }).addTo(map);
+
+      (async () => {
+        const code = "08220"; // つくば市の行政区域コード
+        const response = await fetch(
+          `https://shikuchoson-boundaries.sankichi.app/${code}.geojson`
+        );
+        const geojson = await response.json();
+
+        map.fitBounds([
+          [geojson.bbox[1], geojson.bbox[0]],
+          [geojson.bbox[3], geojson.bbox[2]],
+        ]);
+
+        L.geoJSON(geojson).addTo(map);
+      })();
+    </script>
+  </body>
+</html>

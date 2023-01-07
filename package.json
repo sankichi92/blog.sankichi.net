@@ -5,7 +5,7 @@
     "textlint": "textlint"
   },
   "devDependencies": {
-    "textlint": "^11.6.3",
+    "textlint": "^12.5.1",
     "textlint-rule-preset-japanese": "^4.0.4"
   }
 }
